@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Relacion de Equivalencia</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">    
+    <link rel="stylesheet" href="../main.css">
+    <script type="text/javascript" src="../main.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+	<div class="box">
+	<div class="content">	
+
+		<h1>Relacion de Equivalencia</h1>	
+		<hr>
+			
+		<h3>Introduccion</h3>
+		<p>Una relacion R en un conjunto A se llama relacion de equivalencia si es <b>reflexiva, simetrica y transitiva</b> (las tres).</p>
+		<p>Una particion (P) de un conjunto no vacio A es una coleccion de subconjuntos no vacios de A tales que:</p>
+
+		<ol>
+			<li>Cada elemento de A pertenece a uno de los conjuntos de P</li>
+			<li>Si los subconjuntos A<sub>1</sub> y A<sub>2</sub> tienen elementos distintos de P, entonces A<sub>1</sub>nA<sub>2</sub> = nulo (vacio.)</li>
+		</ol>
+		<p>Los conjuntos que hay en P se llaman bloques o celdas de la particion. La siguiente figura muestra una particion de A enn 7 bloques</p>
+		<p>P = { A<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub>, A<sub>4</sub>, A<sub>5</sub>, A<sub>6</sub>, A<sub>7</sub> }</p>
+		
+		<center><img class="image" title="imagen" src="images/img1.png" alt="imagen" width="290px" height="auto"/></center>
+	
+		<br><br>
+		<h3>Ejemplo 1</h3>	
+		<hr>
+		<br>
+	    <p>Sea X = {a,b,c,d,e,f,g,h}</p> 
+		<p>Considera los siguientes subconjuntos de X para determinar las particiones que surjan.</p>
+		
+		<ul>
+			<li>X<sub>1</sub> = {a,b,c,d}</li>
+			<li>X<sub>2</sub> = {a,c,e,f,g,h}</li>
+			<li>X<sub>3</sub> = {a,c,e,g}</li>
+
+			<li>X<sub>4</sub> = {b,d}</li>
+			<li>X<sub>5</sub> = {f,h}</li>
+		</ul>
+		
+		<h4>Respuesta</h4>
+
+		<ul>
+			<li>P<sub>1</sub> = { x<sub>2</sub>, x<sub>4</sub> }</li>
+			<li>P<sub>1</sub> = { x<sub>3</sub>, x<sub>4</sub>, x<sub>5</sub> }</li>
+		</ul>
+
+		<br><br>
+		<hr>
+		<br><br>
+		
+		<p>Si P es una particion de un conjunto A, entonces P puede usarse para construir una relacion de equivalencia en A como sigue:</p>
+		<p><b>aRb si y solo si 'a' y 'b' son miembros del mismo bloque</b></p>
+		<p>'R' es una relacion de equivalencia en A porque:</p>
+		<ol>
+			<li>Si aEA, entonces es claro que 'a' esta en el mismo bloque, por lo tanto aRa</li>
+			<li>Si aRb, entonces 'a' y 'b' estan en el mismo bloque, por lo que bRa</li>
+			<li>Si aRb y bRc, enconces, 'a', 'b' y 'c' deben estar todos en el mismo bloque de P, en consecuencia aRc</li>	
+		</ol>
+
+		<p>Puesto que la relacion anterior es reflexiva, simetrica y transitiva, R es una relacion de equivalencia; a esta relacion se le denomina 'relacion de equivalencia determinada por la particion'</p>
+
+		<br><br>
+		<h3>Ejemplo 2</h3>	
+		<hr>
+		<br>
+
+		<p>Sea A = {1,2,3,4}, considera P = { {1,2,3},{4} }</p>
+		<p><i>Obten la relacion de equivalencia determinada por la particion P</i></p>
+		<p><b>Respuesta</b></p>
+		<p>AxA = { (1,1), (1,2), (1,3), (1,4), (2,1), (2,2), (2,3), (2,4), (3,1), (3,2), (3,3), (3,4), (4,1), (4,2), (4,3), (4,4) }</p>
+		<p>R = { (1,1), (1,2), (1,3), (2,1), (2,2), (2,3), (3,1), (3,2), (3,3), (4,4) }</p>
+	 
+	</div>
+	</div>
+	
+	<p class = "footer">Creado por: Ruben Baca. Copyright 2012. All rights reserved</p>
+	
+</body>
+
+
+</html>
+

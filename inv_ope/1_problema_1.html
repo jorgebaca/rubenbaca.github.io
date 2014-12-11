@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Problema 1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">    
+    <link rel="stylesheet" href="../main.css">
+    <script type="text/javascript" src="../main.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+	<div class="box">
+	<div class="content">	
+
+		<h1>Problema 1</h1>
+		<hr>
+		
+		<h3>Introduccion</h3>
+		<p>Una tienda de animales ha determinado que cada mascota deberia recibir diariamente al menos 70 unidades de proteinas, 100 de carbohidratos y 20 unidades de grasas.</p>
+		<p>Si la tienda vende los 6 tipos de alimentos mostrados...</p>
+		<p>Que mezcla de alimento satisface las necesidades a un costo minimo para la tienda?</p>	
+		
+		<h3>Leyenda:</h3>	
+		<hr>
+		
+		<ul>
+			<li>AAA: Alimento</li>
+			<li>BBB: Proteinas (unidades/onza)</li>
+			<li>CCC: Carbohidratos (unidades/onza)</li>
+			<li>DDD: Grasas (unidades/onza)</li>
+			<li>EEE: Precio ($/onza)</li>
+		</ul>
+		
+		<center>
+		<table border="1" cellpadding="10" width="200">
+		<tr>
+			<td><b>AAA</b></td>
+			<td><b>BBB</td>
+			<td><b>CCC</td>
+			<td><b>DDD</td>
+			<td><b>EEE</td>
+		</tr>
+		<tr>
+			<td><center>A</center></td>
+			<td><center>20</center></td>
+			<td><center>50</center></td>
+			<td><center>4</center></td>
+			<td><center>2</center></td>
+		</tr>
+		<tr>
+			<td><center>B</center></td>
+			<td><center>30</center></td>
+			<td><center>30</center></td>
+			<td><center>9</center></td>
+			<td><center>3</center></td>
+		</tr>
+		<tr>
+			<td><center>C</center></td>
+			<td><center>40</center></td>
+			<td><center>20</center></td>
+			<td><center>11</center></td>
+			<td><center>5</center></td>
+		</tr>
+		<tr>
+			<td><center>D</center></td>
+			<td><center>40</center></td>
+			<td><center>25</center></td>
+			<td><center>10</center></td>
+			<td><center>6</center></td>
+		</tr>
+		<tr>
+			<td><center>E</center></td>
+			<td><center>45</center></td>
+			<td><center>50</center></td>
+			<td><center>9</center></td>
+			<td><center>8</center></td>
+		</tr>
+		<tr>
+			<td><center>F</center></td>
+			<td><center>30</center></td>
+			<td><center>20</center></td>
+			<td><center>10</center></td>
+			<td><center>8</center></td>
+		</tr>
+		
+		</table>
+		</center>
+		
+		<br>
+		<h2>Respuesta</h2>
+		<hr>
+		<br>
+
+		<h3>Variables</h3>	
+		
+		<p>x<sub>i</sub>: Cantidad en onzas del alimento 'i' en la mezcla</p>
+		<p>donde: i = (A, B, C ... F)</p>
+		
+		<h3>Objetivo</h3>	
+		<p>Minimizar costos:</p>
+		<p>minZ = 2x<sub>A</sub> + 3x<sub>B</sub> + ... + 8x<sub>F</sub></p>
+		
+		<h3>Restricciones</h3>	
+		
+		<p>20x<sub>A</sub> + 30x<sub>B</sub> + ... + 30x<sub>F</sub> >= 70</p>
+		<p>50x<sub>A</sub> + 30x<sub>B</sub> + ... + 20x<sub>F</sub> >= 100</p>
+		<p>4x<sub>A</sub> + 3x<sub>B</sub> + ... + 8x<sub>F</sub> >= 70</p>
+		<p>2x<sub>A</sub> + 9x<sub>B</sub> + ... + 10x<sub>F</sub> >= 20</p>
+		<p>x<sub>i</sub> >= 0</p>
+
+	</div>
+	</div>
+	
+	<p class = "footer">Creado por: Ruben Baca. Copyright 2012. All rights reserved</p>
+	
+</body>
+
+</html>
+

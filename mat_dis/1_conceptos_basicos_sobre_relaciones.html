@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Conceptos Basicos Sobre Relaciones</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">    
+    <link rel="stylesheet" href="../main.css">
+    <script type="text/javascript" src="../main.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+	<div class="box">
+	<div class="content">	
+
+		<h1>Conceptos Basicos Sobre Relaciones</h1>
+		
+		<hr>
+		
+		<h3>Matematicas Discretas</h3>
+		<p>Surge como una disciplina que unifica diversas areas tradicionales de las matematicas (combinatoria, probabilidad, aritmetica, grafos, etc) como consecuencia de su interes en la informatica y las telecomunicaciones. La información se manipula y almacena en los ordenadores en forma discreta (palabras formadas por ceros y unos). Se necesita contar objetos, se precisa estudiar relaciones entre conjuntos finitos (busquedas de bases de datos), es necesario analizar procesos que incluyan un numero finito de pasos.</p>
+		<p>La matematica discreta proporciona algunas bases matematicas para otros aspectos: estructuras de datos, teoria de automatas, sistemas operativos, investigacion operativa, etc; asi como ayuda al desarrollo de ciertas capacidades 	para un ingeniero, como: capacidad de formalizar, de razonar, etc.</p>
+		<p>Para hacernos una idea mas clara del contenido de esta disciplina, podemos plantearnos algunas preguntas en informatica y responderlas con metodos de matematica discreta, por ejemplo:</p>
+		
+		<ul>
+			<li>Dada una tecnologia de cableado, Cual es el diseño de red mas economico?</li>
+			<li>Cuantas palabras clave validas hay para acceder a un sistema?</li>
+			<li>Como modificar adecuandamente un mensaje?</li>
+		</ul>
+		
+		<p>La matematica discreta nacio hace pocos años , como concecuendia de las computadoras (maquinas finitas).</p>
+
+
+		<h3>Relaciones</h3>
+		<p>Nuestro mundo esta lleno de relaciones:</p>
+		
+		<ul>
+			<li>Entre personas</li>
+			<li>Cantidades</li>
+			<li>Etc</li>
+		</ul>
+		
+		<p>Al definir una relacion, estamos estableciendo un vinculo entre elementos de un conjunto y otro, o bien; del mismo conjunto.</p>
+		<p>Podemos pensar en una relacion de un conjunto a otro como una tabla que lista los elementos del 1er conjunto relacionados con los elementos del 2o conjunto.</p>
+		
+		<h4>Relacion de estudiantes-cursos</h4>
+		<center><img title="Tabla Relaciones" src="images/tabla1.png" alt="Tabla Relaciones" width="260px" height="auto"/></center>
+	
+		<br><br>
+		<h3>Ejemplo</h3>	
+		<hr>
+		<br>
+		
+		<p>Sean A = { 1,2,3 } y B = { r,s }</p>
+		<p>AxB = { (1,r), (1,s), (2,r), (2,s), (3,r), (3,s) }</p>
+		<p>BxA = { (r,1), (r,2), (r,3), (s,1), (s,2), (s,3) }</p>
+		<h4>Algunas relaciones podrian ser:</h4>	
+		<p>R1 = { (1,r), (1,s), (2,r), (2,s), (3,r), (3,s) }</p>
+		<p>R2 = { (2,r), (2,s), (3,r) }</p>
+		
+		<br><br>
+		<h3>Dominio y Rango</h3>	
+		<hr>
+		<br>
+	
+		<p>El conjunto:</p>
+		<p>{ a∑A / (a,b) ∑  para alguna b∑B }</p>
+		<p>se llama dominio de R: <b>Dom(R)</b>. Esto es, el dominio corresponde al conjunto de elementos de A que estan relacionados con algun elemento de B.</p>
+		<p>El conjunto: </p>
+		<p>{ b∑B / (a,b) ∑  para alguna a∑A }</p>
+		<p>se llama rango de R: <b>Ran(R)</b>. Es decir, el rango es el conjunto de todos los elementos de B relacionados con algun elemento de A.</p>
+		
+		<h4>Ejemplo de Dominio y Rango</h4>	
+		
+		<p>R1 = { (1,r), (1,s), (2,r), (2,s), (3,r), (3,s) }	</p>
+		<p>Dom(R1) = { 3,2,1 }</p>
+		<p>Ran(R1) = { r.s }</p>
+		
+		<center><img class="image" title="Problema Dominio y Rango" src="images/prob1.png" alt="Problema Dominio y Rango" width="290px" height="auto"/></center>
+	
+		
+		
+		<p><b>Nota: </b>Es posible establecer una relacion con solo especificar que pares ordenados pertenecen a la misma, Sin embargo, algunas veces es pocible definir una relacion dando una <b>regla</b> para partenecer a la relacion.</p>
+		<center><img class="image" title="Problema Dominio y Rango" src="images/prob2.png" alt="Problema Dominio y Rango" width="290px" height="auto"/></center>
+	    <center><img class="image" title="Problema Dominio y Rango" src="images/prob3.png" alt="Problema Dominio y Rango" width="290px" height="auto"/></center>
+	
+	</div>
+	</div>
+	
+	<p class = "footer">Creado por: Ruben Baca. Copyright 2012. All rights reserved</p>
+	
+</body>
+
+
+</html>
