@@ -1,0 +1,303 @@
+/*
+======================================================
+======================================================
+
+Aunque la mayoría del estilo es de Bootstrap (usando
+servidor CDN), aquí se incluyen los estilos añadidos
+específicamente por el usuario.
+
+======================================================
+======================================================
+*/
+body{
+	background-color: rgb(220,220,220);
+}
+
+/* LOGO TEMPLE */
+@font-face{
+	font-family: qbiK;
+	src: url(../fonts/cubic.ttf);
+}
+.brand-logo{
+	-webkit-transition: 0.5s;
+	font-family: 'qbiK';
+	font-weight: bold;
+}
+/* LOGO TEMPLE */
+
+
+.jumbotron{
+	box-shadow: 0px 0px 5px gray;
+	margin-top: 40px;
+	background-color: rgb(252,252,252);
+}
+
+
+
+/* Hero (TEMPLE logo) */
+.hero{
+	margin-top: -20px;
+	        left:0;
+        /*position:absolute;*/
+        width: 100%;
+        height: 350px;
+        text-align: center;
+        font-size: 200px;
+        line-height:300px;
+        vertical-align: center; 
+        box-shadow: inset  0  18px 23px -8px rgba(0,0,0,.3), 
+                    inset  0 -18px 23px -8px rgba(0,0,0,.3);
+}
+/* End of hero */
+
+.uni_logos{
+	display: inline-block;
+	margin: 0px;
+}
+#logo_uach{
+	width: 300px;
+	height: 300px;
+	background-image: url('../media/uni_logos/uach/normal.png');
+	background-size: cover;
+	float: left;
+}#logo_uach:hover{
+	background-image: url('../media/uni_logos/uach/hover.png');
+}
+#logo_tec_chih{
+	width: 300px;
+	height: 300px;
+	background-image: url('../media/uni_logos/tec_chih/normal.png');
+	background-size: cover;
+	float: left;
+}#logo_tec_chih:hover{
+	background-image: url('../media/uni_logos/tec_chih/hover.png');
+}
+
+/* Lista de facultades (en /facultades) */
+.user-lista-facultades{
+	max-height: 185px;
+	overflow: auto;
+}
+
+.user-list input{
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.user-list label{
+	margin-left: 7px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+/* Pag. /horarios/content.php */
+.user-tabla-horario{
+	background-color: rgb(235,235,235);
+	min-width: 600px;
+	width: 600px;
+	box-shadow: 0px 0px 4px gray;
+}
+
+/* Barra de progreso ubicada en la mayoría de las páginas */
+.user-progress-bar{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+
+/* Publicidad que aparece antes de dar el resultado */
+.user-video-ad{
+	box-shadow: 0px 0px 19px black;
+	padding: 2px;
+	background-color: black;
+	width: 600px;
+	border-radius: 5px;
+}
+
+
+/* Para no poder seleccionar opciones inválidas en tabla HORARIOS */
+.user-unselectable{
+	pointer-events: none;
+}
+
+
+
+/* FOOTER */
+.user-footer{
+	background-color: rgb(40,40,40);
+	padding-top: 30px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	border: none;
+	border-radius: 0;
+	box-shadow: inset 0px 0px 15px rgb(35,35,35);
+}
+.user-footer .brand-logo{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-shadow: 1px 1px rgb(35,35,35), -1px -1px rgb(35,35,35);
+}
+.user-footer .text{
+	font-style: italic;
+}
+
+
+
+
+/* Darle color al boton primary acorde al color de TEMPLE */
+.btn-primary{
+	background-color: #34495d;
+	border-color: rgb(50,67,74);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+	background-color: rgb(50,67,74);
+	border-color: rgb(60,77,84);
+}
+
+
+
+
+
+/*
+============================================
+============================================
+============================================
+	TABLA RESULTADOS (HORARIO)
+============================================
+============================================
+============================================
+*/
+.materia{
+	min-height: 30px;
+	padding-top: 3px;
+	border-left: solid 10px;
+}
+	.mat-1{
+		border-color: red;
+		background-color: rgba(255,0,0,0.15);
+		color: rgb(100,0,0);
+	}
+	.mat-2{
+		border-color: rgb(0,150,0);
+		background-color: rgba(0,90,0,0.2);
+		color: rgb(0,60,0);
+	}
+	.mat-3{
+		border-color: blue;
+		background-color: rgba(0,0,255,0.15);
+		color: rgb(0,0,100);
+	}
+	.mat-4{
+		border-color: rgb(200,200,0);
+		background-color: rgba(200,200,0,0.15);
+		color: rgb(50,50,0);
+	}
+	.mat-5{
+		border-color: rgb(0,200,200);
+		background-color: rgba(0,200,200,0.15);
+		color: rgb(0,50,50);
+	}
+	.mat-6{
+		border-color: rgb(200,0,200);
+		background-color: rgba(200,0,200,0.15);
+		color: rgb(50,0,50);
+	}
+	.mat-7{
+		border-color: rgb(230,130,30);
+		background-color: rgba(230,130,30,0.15);
+		color: rgb(100,10,0);
+	}
+	.mat-8{
+		border-color: rgb(133,244,39);
+		background-color: rgba(133,244,39,0.15);
+		color: rgb(0,110,0);
+	}
+	.restriccion{
+		background-color: rgb(230,230,230);
+		border-color: rgb(215,215,215);
+	}
+/*
+============================================
+	fin tabla resultados (horario)
+============================================
+*/
+
+
+/*
+============================================
+============================================
+============================================
+
+	BOTONES EXPORTAR (/resultado/index.php)
+		- Email
+		- Image
+		- PDF
+		- Excel
+
+============================================
+============================================
+============================================
+*/
+.user-export-mail{
+	background-color: rgb(31,104,222);
+	border-color: rgb(1,74,192);
+}
+	.user-export-mail:hover,
+	.user-export-mail:focus,
+	.user-export-mail:active,
+	.user-export-mail.active {
+		background-color: rgb(51,124,242);
+		border-color: rgb(1,74,192);
+	}
+
+.user-export-image{
+	background-color: rgb(228,136,20);
+	border-color: rgb(198,106,0);
+}
+	.user-export-image:hover,
+	.user-export-image:focus,
+	.user-export-image:active,
+	.user-export-image.active {
+		background-color: rgb(248,156,40);
+		border-color: rgb(198,106,0);
+	}
+
+.user-export-pdf{
+	background-color: rgb(230,47,50);
+	border-color: rgb(200,17,20);
+}
+	.user-export-pdf:hover,
+	.user-export-pdf:focus,
+	.user-export-pdf:active,
+	.user-export-pdf.active {
+		background-color: rgb(255,77,80);
+		border-color: rgb(200,17,20);
+	}
+.user-export-excel{
+	background-color: rgb(110,166,60);
+	border-color: rgb(70,98,40);
+}
+	.user-export-excel:hover,
+	.user-export-excel:focus,
+	.user-export-excel:active,
+	.user-export-excel.active {
+		background-color: rgb(130,186,80);
+	}
+/* fin botones exportar */
+
+
+
+
+
+/* 
+	Input 'buscar' 
+	Usado en:
+		- /facultades/index.php
+		- /carreras/index.php	
+*/
+.user-buscar-input{
+	max-width: 400px;
+}
+
